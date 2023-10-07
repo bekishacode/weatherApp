@@ -1,19 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import styles from "./style";
+import { Forcast, Inputs, TemperatureAndDetails, TimeAndLocation, Footer, Navbar } from "./components";
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <h1 className="text-3xl font-bold underline">Hello world!
-        </h1> 
+const App = () => (
+  <div className="bg-emerald-900 w-full overflow-hidden">
+    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+      <div className={`${styles.boxWidth}`}>
+        <Navbar />
       </div>
-    </>
-  )
-}
+    </div>
 
-export default App
+    <div className={`bg-teal-50 w-full ${styles.flexStart}`}>
+      <div className={`${styles.boxWidth}`}>
+        <Forcast />
+        <TemperatureAndDetails/>
+        <TimeAndLocation/>
+      </div>
+    </div>
+    
+    <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+      <div className={`${styles.boxWidth}`}>
+        <Footer/>
+      </div>
+    </div>
+  </div>
+);
+
+export default App;

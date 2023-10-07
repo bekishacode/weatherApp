@@ -1,9 +1,6 @@
-import React from 'react'
+import styles from "../style";
 
-const TimeAndLocation = () => {
-  return (
-    <div>TimeAndLocation</div>
+const TimeAndLocation = () =>(
+    <section className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>TimeAndLocation</section>
   )
-}
-
 export default TimeAndLocation;

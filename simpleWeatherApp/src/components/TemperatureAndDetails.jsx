@@ -1,9 +1,8 @@
-import React from 'react'
+import styles from "../style";
 
-const TemperatureAndDetails = () => {
-  return (
-    <div>TemperatureAndDetails</div>
+const TemperatureAndDetails = () =>(
+    <section className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>TemperatureAndDetails</section>
   )
-}
+
 
 export default TemperatureAndDetails;

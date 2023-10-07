@@ -1,8 +1,6 @@
-
-const Forcast = () => {
-  return (
-    <div>Forcast</div>
+import styles from "../style";
+const Forcast = () =>(
+    <section className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>Forcast</section>
   )
-}
 
 export default Forcast;
