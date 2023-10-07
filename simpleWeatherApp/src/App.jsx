@@ -1,5 +1,6 @@
 import styles from "./style";
-import { Forcast, Inputs, TemperatureAndDetails, TimeAndLocation, Footer, Navbar } from "./components";
+import Weather from "./Weather";
+import { Forecast, Inputs, TemperatureAndDetails, TimeAndLocation, Footer, Navbar } from "./components";
 
 const App = () => (
   <div className="bg-emerald-900 w-full overflow-hidden">
@@ -11,9 +12,7 @@ const App = () => (
 
     <div className={`bg-teal-50 w-full ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
-        <Forcast />
-        <TemperatureAndDetails/>
-        <TimeAndLocation/>
+        <Weather/>
       </div>
     </div>
     
